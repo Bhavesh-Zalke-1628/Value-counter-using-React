@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+button{
+  height: 35px;
+  width: 120px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+button:hover{
+  border: 2px solid #fff;
+}
