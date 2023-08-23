@@ -5,11 +5,20 @@ import { clear } from '@testing-library/user-event/dist/clear';
 function App() {
   let [counter, setCounter] = useState(0);
   const addvalue =()=>{
-    counter=counter+1
-    setCounter(counter)
+    if(counter<20){
+      setCounter(counter+1)
+    }else{
+      alert("Limit reatched")
+      setCounter(20)
+    }
   }
-  let removeValue=() => {
-    var remove = setCounter(counter-1)
+  const removeValue=() => {
+    if(counter>0){
+      setCounter(counter-1)
+    }else{
+      alert("Limit reatched")
+      setCounter(0)
+    }
   }
   return (
     <div className='container'>

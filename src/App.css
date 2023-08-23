@@ -20,7 +20,7 @@ html,body{
 }
 button{
   height: 35px;
-  width: 120px;
+  width: 150px;
   cursor: pointer;
   margin-top: 10px;
   background-color: #000;
@@ -29,4 +29,5 @@ button{
 }
 button:hover{
   border: 2px solid #fff;
+  border-radius:10px;
 }
